@@ -8,9 +8,9 @@ if (file_exists(__DIR__ . '/../.env')) {
 }
 
 define('DB_HOST', $_ENV['DB_HOST'] ?? 'localhost');
-define('DB_NAME', $_ENV['DB_NAME'] ?? 'mydatabase');
-define('DB_USER', $_ENV['DB_USER'] ?? 'root');
-define('DB_PASS', $_ENV['DB_PASS'] ?? '');
+define('DB_DATABASE', $_ENV['DB_DATABASE'] ?? 'MVC');
+define('DB_USERNAME', $_ENV['DB_USERNAME'] ?? 'root');
+define('DB_PASSWORD', $_ENV['DB_PASSWORD'] ?? '');
 define('DB_DRIVER', $_ENV['DB_DRIVER'] ?? 'mysql');
 
 define('APP_ENV', $_ENV['APP_ENV'] ?? 'production');
