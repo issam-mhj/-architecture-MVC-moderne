@@ -1,0 +1,10 @@
+.env
+
+/vendor/
+
+/logs/*
+
+.idea/
+.vscode/
+
+.DS_Store
