@@ -14,30 +14,23 @@ class AuthController extends Controller
     }
 
     public function login()
-{
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
 
-        // Find the user by email
-        $user = User::where('email', $email)->first();
+            $user = User::where('email', $email)->first();
+            if ($user && password_verify($password, $user->password)) {
+                Session::set('user', $user);
 
-        // Verify the password
-        if ($user && password_verify($password, $user->password)) {
-            // Set user session
-            Session::set('user', $user);
+                $this->redirect('/dashboard');
+            } else {
+                Session::set('error', 'Invalid email or password');
 
-            // Redirect to the dashboard or home page
-            $this->redirect('/dashboard');
-        } else {
-            // Set error message
-            Session::set('error', 'Invalid email or password');
-
-            // Redirect back to the login page
-            $this->redirect('/login');
+                $this->redirect('/login');
+            }
         }
     }
-}
 
     public function logout()
     {

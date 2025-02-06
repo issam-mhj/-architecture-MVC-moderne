@@ -1,7 +1,5 @@
 <?php
 
-// routes.php
-
 use App\Core\Router;
 use App\Controllers\Front\HomeController;
 use App\Controllers\AuthController;

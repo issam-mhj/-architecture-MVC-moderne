@@ -5,7 +5,6 @@ namespace App\Core;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
-require 'vendor/autoload.php';
 class Database
 {
     public function __construct()
