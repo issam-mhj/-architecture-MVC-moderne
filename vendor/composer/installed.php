@@ -3,7 +3,7 @@
         'name' => 'vendor/mvc',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ef6d7d71e6fa42e9acc48d4730273c7bc27e3990',
+        'reference' => 'c8f88f19284926a2275026206cdc492c388ca44a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -604,7 +604,7 @@
         'vendor/mvc' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ef6d7d71e6fa42e9acc48d4730273c7bc27e3990',
+            'reference' => 'c8f88f19284926a2275026206cdc492c388ca44a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -46,7 +46,7 @@
         <div class="w-full md:w-1/2 p-12">
             <h2 class="text-3xl font-bold mb-8">Sign In</h2>
 
-            <form id="signInForm" action="/login" method="POST" class="space-y-6">
+            <form id="signInForm" action="/" method="POST" class="space-y-6">
                 <!-- Email Input -->
                 <div>
                     <input type="email"
@@ -74,6 +74,10 @@
                     </svg>
                 </button>
             </form>
+            <p class="text-center text-gray-600">
+                you don't have an account?
+                <a href="/signup" class="text-purple-600 hover:text-purple-700">Sign up</a>
+            </p>
 
         </div>
     </div>
